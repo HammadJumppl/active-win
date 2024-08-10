@@ -23,7 +23,10 @@
 		"index.js",
 		"index.d.ts",
 		"lib",
-		"main"
+		"main",
+		"build/Release/win_browser_url.node",
+		"cpp",
+		"binding.gyp"
 	],
 	"keywords": [
 		"macos",
@@ -56,8 +59,12 @@
 	],
 	"devDependencies": {
 		"ava": "^2.4.0",
+		"node-addon-api": "^5.0.0",
 		"tsd": "^0.14.0",
 		"xo": "^0.38.2"
+	},
+	"dependencies": {
+		"node-gyp": "^9.0.0"
 	},
 	"optionalDependencies": {
 		"ffi-napi": "^4.0.3",
